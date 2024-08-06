@@ -241,3 +241,54 @@ html {
     font-size: 60px;
   }
 }
+/* hero ended */
+
+/* main started -- slider*/
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ececec;
+  padding: 2rem 0;
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 8s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.marquee-item {
+  width: 11.2rem;
+  background-color: #010101;
+  color: white;
+  display: inline-block;
+  padding: 0.4rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.marquee-item p {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .marquee {
+    animation: marquee 20s linear infinite;
+  }
+}
+/* slider ended */
