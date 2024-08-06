@@ -109,7 +109,7 @@ html {
   right: 0;
   width: 100%;
   height: 3.3rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(8, 38, 0);
   box-shadow: 0 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.6);
 }
 
@@ -118,7 +118,7 @@ html {
 }
 
 .header .nav .navLinks a.hoverUnderline {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 .header .nav .navLinks a.hoverUnderline:hover {
   color: #c6b519;
@@ -186,6 +186,9 @@ html {
   .button {
     padding: 1rem 1rem;
     cursor: pointer;
+  }
+  .header .nav {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 

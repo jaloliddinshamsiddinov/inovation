@@ -19,6 +19,10 @@ lists.forEach((item) => {
     menuContent.classList.toggle("activeMobileMenu");
   });
 });
+
+document.querySelector("body").addEventListener("click", (evnt) => {
+  // console.log(evnt.target);
+});
 // nav action ended
 
 // main started
