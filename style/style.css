@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,35 +22,39 @@ html {
 .container {
   width: 100%;
   margin: auto;
+  padding: 0 1rem;
+}
+.hoverUnderline:hover {
+  text-decoration: underline;
 }
 
 /* this containers code */
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 36rem) {
   .container {
-    width: 540px;
+    width: 33.75rem;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48rem) {
   .container {
-    width: 720px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .container {
-    width: 960px;
+    width: 45rem;
   }
 }
 
-@media only screen and (min-width: 1200) {
+@media only screen and (min-width: 62rem) {
   .container {
-    width: 1140px;
+    width: 60rem;
   }
 }
 
-@media only screen and (min-width: 1400) {
+@media only screen and (min-width: 75rem) {
   .container {
-    width: 1320px;
+    width: 74rem;
+  }
+}
+
+@media only screen and (min-width: 87.5rem) {
+  .container {
+    width: 82.5rem;
   }
 }
 /* this containers code ended */
@@ -63,4 +70,180 @@ html {
 }
 .justify-between {
   justify-content: space-between;
+}
+.active {
+  background-color: #c6b519 !important;
+}
+
+.button {
+  display: block;
+  background-color: rgb(8, 38, 0);
+  color: white;
+  border: none;
+  outline: none;
+  height: 3.3rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #c6b519;
+}
+
+.header {
+  padding-top: 3.3rem;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.header .nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3.3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.6);
+}
+
+.header .nav .logo img {
+  width: 7rem;
+}
+
+.header .nav .navLinks a.hoverUnderline {
+  margin-right: 1rem;
+}
+.header .nav .navLinks a.hoverUnderline:hover {
+  color: #c6b519;
+}
+.header .nav .navLinks a.hoverUnderline {
+  color: white;
+  font-weight: bold;
+}
+.header .nav .navLinks {
+  display: none;
+}
+.header .nav .hamburger {
+  display: block;
+  color: white;
+}
+.header .mobileMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: 0.3s;
+}
+
+.header .activeMobileMenu {
+  padding-top: 3.3rem;
+  background-color: rgb(8, 38, 0);
+  transition: 0.3s;
+  transform: translate(0);
+}
+.menuAnimation {
+  transform: translate(0);
+}
+.toggleIcon {
+  display: none;
+}
+.menuList {
+  margin-top: 1rem;
+}
+.menuList li {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid white;
+  background-color: rgb(8, 38, 0);
+}
+
+.menu__icons {
+  color: white;
+  padding: 0 15px;
+}
+
+/* nav responsive */
+
+@media only screen and (min-width: 48rem) {
+  .header .nav .navLinks a.hoverUnderline {
+    margin-right: 0.5rem;
+    font-weight: 300;
+  }
+  .header .nav .navLinks {
+    display: flex;
+  }
+  .header .nav .hamburger {
+    display: none;
+  }
+  .button {
+    padding: 1rem 1rem;
+    cursor: pointer;
+  }
+}
+
+/* nav styles ended */
+
+/* hero styles started */
+.hero .heroContent {
+  margin-top: 55vh;
+}
+.hero .heroDescr,
+.heroTitle {
+  color: white;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+}
+.hero .heroDescr {
+  font-size: 1.1rem;
+}
+
+.hero .heroTitle {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 36rem) {
+  .hero .heroDescr {
+    font-size: 1.5rem;
+  }
+  .hero .heroTitle {
+    font-size: 2.7rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .hero .heroDescr {
+    font-size: 1.5rem;
+  }
+  .hero .heroTitle {
+    font-size: 2.7rem;
+  }
+}
+
+@media only screen and (min-width: 62rem) {
+  .hero .heroDescr {
+    font-size: 2.7rem;
+  }
+  .hero .heroTitle {
+    font-size: 3.7rem;
+  }
+}
+
+/* @media only screen and (min-width: 75rem) {
+  .hero .heroDescr,
+  .heroTitle {
+    font-size: 60px;
+  }
+} */
+
+@media only screen and (min-width: 87.5rem) {
+  .hero .heroDescr,
+  .heroTitle {
+    font-size: 60px;
+  }
 }
