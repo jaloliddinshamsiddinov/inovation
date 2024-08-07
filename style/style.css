@@ -414,6 +414,15 @@ ctf_right_content .ctf_right_title {
   margin-top: 1rem;
   background: #ececec;
   padding-top: 2.5rem;
+  position: relative;
+}
+
+.groupRightSchemaImg {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10rem;
 }
 
 .main .service .busennsTitle {
@@ -440,7 +449,7 @@ ctf_right_content .ctf_right_title {
 }
 
 .main .service .cards .card {
-  width: 19.5rem;
+  width: 22rem;
 }
 
 .main .service .cards .card .cardDescrBox {
@@ -528,6 +537,10 @@ ctf_right_content .ctf_right_title {
 }
 
 @media only screen and (min-width: 48rem) {
+  .groupRightSchemaImg {
+    display: block;
+  }
+
   .main .service .cards {
     flex-wrap: wrap;
     gap: 2rem;
