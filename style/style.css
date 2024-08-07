@@ -448,9 +448,9 @@ ctf_right_content .ctf_right_title {
   justify-content: center;
 }
 
-.main .service .cards .card {
+/* .main .service .cards .card {
   width: 22rem;
-}
+} */
 
 .main .service .cards .card .cardDescrBox {
   position: relative;
