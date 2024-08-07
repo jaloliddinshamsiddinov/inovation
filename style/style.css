@@ -623,9 +623,12 @@ ctf_right_content .ctf_right_title {
 
 .CaseStudy .CaseStudyCard {
   margin: auto;
-  width: 18rem;
+  width: 22rem;
 }
 
+.CaseStudy .CaseStudyCard .img {
+  width: 100%;
+}
 
 .CaseStudy .CaseStudyCard .imgTitle {
   font-family: var(--shippori-mincho);
