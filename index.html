@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- this is a swiperjs link fro slider  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="stylesheet" href="./style/style.css" />
   <title>company</title>
@@ -13,6 +15,8 @@
   <div class="wrapper">
     <div>
       <div class="header">
+
+        <!-- this is a navigation bar -->
         <div class="nav">
           <div style="min-height: 3.3rem" class="container flex items-center justify-between">
             <div class="logo">
@@ -64,19 +68,18 @@
             </div>
           </div>
         </div>
+
+        <!-- this is a hero content -->
         <div class="hero container">
           <div class="heroContent">
             <p class="heroDescr">Management Innovation </p>
             <h1 class="heroTitle">経営プロセスに革新を</h1>
           </div>
         </div>
+
       </div>
 
-      <!-- header ended -->
-
-
       <div class="main">
-
         <!-- this is a slider -->
         <div class="marquee-container">
           <div class="marquee">
@@ -173,54 +176,128 @@
           </div>
         </div>
 
+        <!-- this is a Case Study content -->
+        <div class="CaseStudy container">
+          <p class="logoTitle">導入事例</p>
+          <h2 class="CaseStudyTitle">Case Study</h2>
+          <div class="CaseStudyCards">
+
+            <div class="CaseStudyCard">
+              <img class="img" src="./images/studyCard.png" alt="Case Study">
+              <div class="imgTitle">株式会社　株式会社</div>
+              <div class="imgDesc">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</div>
+              <div class="studyCardSelect">
+                <button>Zero sales</button>
+                <button>コンサルティング</button>
+                <button>従業員50人</button>
+                <button>計画設計コンサルティング</button>
+              </div>
+            </div>
+
+            <div class="CaseStudyCard">
+              <img class="img" src="./images/studyCard.png" alt="Case Study">
+              <div class="imgTitle">株式会社　株式会社</div>
+              <div class="imgDesc">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</div>
+              <div class="studyCardSelect">
+                <button>Zero sales</button>
+                <button>コンサルティング</button>
+                <button>従業員50人</button>
+                <button>計画設計コンサルティング</button>
+              </div>
+            </div>
+
+            <div class="CaseStudyCard">
+              <img class="img" src="./images/studyCard.png" alt="Case Study">
+              <div class="imgTitle">株式会社　株式会社</div>
+              <div class="imgDesc">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</div>
+              <div class="studyCardSelect">
+                <button>Zero sales</button>
+                <button>コンサルティング</button>
+                <button>従業員50人</button>
+                <button>計画設計コンサルティング</button>
+              </div>
+            </div>
+          </div>
+          <button class="viewMoreBtn CaseStudyBtn">View More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- this is a member content -->
+        <div class="member">
+
+          <div class="container">
+            <p class="memberTitle">メンバー</p>
+            <h2 class="memberEnTitle">Member</h2>
+          </div>
+
+          <!-- member slider -->
+          <div class="container">
+            <div class="memberSlider flex">
+              <button id="memberSlideLeftArrow" class="memberSlideArrow"><i class="fa-solid fa-arrow-left"></i></button>
+
+              <div class="memberSlideContent">
+
+                <div class="slideContent__item">
+                  <div class="sliderItem_img">
+                    <img src="./images/memberSlider.png" alt="member">
+                  </div>
+                  <div class="slider__itemDescr">
+                    <p class="slider__itemDescr">役職が入ります</p>
+                    <h2>田中　太郎</h2>
+                  </div>
+                </div>
+
+                <div class="slideContent__item">
+                  <div class="sliderItem_img">
+                    <img src="./images/memberSlider.png" alt="member">
+                  </div>
+                  <div class="slider__itemDescr">
+                    <p class="slider__itemDescr">役職が入ります</p>
+                    <h2>田中　太郎</h2>
+                  </div>
+                </div>
+
+                <div class="slideContent__item">
+                  <div class="sliderItem_img">
+                    <img src="./images/memberSlider.png" alt="member">
+                  </div>
+                  <div class="slider__itemDescr">
+                    <p class="slider__itemDescr">役職が入ります</p>
+                    <h2>田中　太郎</h2>
+                  </div>
+                </div>
+
+                <div class="slideContent__item">
+                  <div class="sliderItem_img">
+                    <img src="./images/memberSlider.png" alt="member">
+                  </div>
+                  <div class="slider__itemDescr">
+                    <p class="slider__itemDescr">役職が入ります</p>
+                    <h2>田中　太郎</h2>
+                  </div>
+                </div>
+
+                <div class="slideContent__item">
+                  <div class="sliderItem_img">
+                    <img src="./images/memberSlider.png" alt="member">
+                  </div>
+                  <div class="slider__itemDescr">
+                    <p class="slider__itemDescr">役職が入ります</p>
+                    <h2>田中　太郎</h2>
+                  </div>
+                </div>
+
+              </div>
+
+              <button id="memberSlideRightArrow" class="memberSlideArrow"><i
+                  class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <!-- this is a Case Study content -->
-    <div class="CaseStudy container">
 
-      <p class="logoTitle">導入事例</p>
-      <h2 class="CaseStudyTitle">Case Study</h2>
-      <div class="CaseStudyCards">
-
-        <div class="CaseStudyCard">
-          <img class="img" src="./images/studyCard.png" alt="Case Study">
-          <div class="imgTitle">株式会社　株式会社</div>
-          <div class="imgDesc">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</div>
-          <div class="studyCardSelect">
-            <button>Zero sales</button>
-            <button>コンサルティング</button>
-            <button>従業員50人</button>
-            <button>計画設計コンサルティング</button>
-          </div>
-        </div>
-
-        <div class="CaseStudyCard">
-          <img class="img" src="./images/studyCard.png" alt="Case Study">
-          <div class="imgTitle">株式会社　株式会社</div>
-          <div class="imgDesc">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</div>
-          <div class="studyCardSelect">
-            <button>Zero sales</button>
-            <button>コンサルティング</button>
-            <button>従業員50人</button>
-            <button>計画設計コンサルティング</button>
-          </div>
-        </div>
-
-        <div class="CaseStudyCard">
-          <img class="img" src="./images/studyCard.png" alt="Case Study">
-          <div class="imgTitle">株式会社　株式会社</div>
-          <div class="imgDesc">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</div>
-          <div class="studyCardSelect">
-            <button>Zero sales</button>
-            <button>コンサルティング</button>
-            <button>従業員50人</button>
-            <button>計画設計コンサルティング</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
 
 
 
@@ -231,7 +308,44 @@
 
   </div>
 
+
+
+
+  <!-- this is a swiperjs link for slider  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+    const swiper = new Swiper('.swiper', {
+      // effect: 'cards',
+      direction: 'horizontal',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        764: {
+          slidesPerView: 2,
+        },
+        1000: {
+          slidesPerView: 3,
+        },
+      }
+    });
+  </script>
+  <!-- this is a own js file -->
   <script src="./js/app.js"></script>
+
 </body>
 
 </html>

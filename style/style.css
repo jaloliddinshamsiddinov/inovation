@@ -619,6 +619,7 @@ ctf_right_content .ctf_right_title {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
+  overflow: hidden;
 }
 
 .CaseStudy .CaseStudyCard {
@@ -651,15 +652,124 @@ ctf_right_content .ctf_right_title {
 .CaseStudy .CaseStudyCard .studyCardSelect {
   display: flex;
   flex-wrap: wrap;
-  gap: .4rem;
-  margin-top: .5rem;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
 }
 
 .CaseStudy .CaseStudyCard .studyCardSelect button {
   font-family: var(--shippori-mincho);
   font-weight: 500;
-  padding: .2rem .3rem;
+  padding: 0.2rem 0.3rem;
   background-color: var(--primary);
   color: var(--white);
   border: none;
+}
+.CaseStudyBtn {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+}
+
+/* this is a members styles */
+.member {
+  background-color: var(--primary);
+  padding: 3rem 0 2rem;
+}
+
+.member .memberTitle,
+.memberEnTitle {
+  font-family: var(--shippori-mincho);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.member .memberEnTitle {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.member .memberSlider .memberSlideArrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 19rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  z-index: 9;
+}
+
+.member .memberSlider .memberSlideArrow:active i {
+  font-size: 18px;
+}
+
+.member .memberSlider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#memberSlideLeftArrow {
+  left: 0;
+}
+
+#memberSlideRightArrow {
+  right: 0;
+}
+
+.member .memberSlider .memberSlideArrow i {
+  font-size: 24px;
+  color: var(--white);
+}
+
+.member .memberSlider .memberSlideContent {
+  display: flex;
+  justify-content: space-between;
+  min-width: 74rem;
+  height: 19rem;
+  overflow: hidden;
+}
+
+.member .memberSlider .memberSlideContent .slideContent__item {
+  overflow: hidden;
+  width: 212px;
+  height: 100%;
+  transition: .5s;
+}
+
+.member
+  .memberSlider
+  .memberSlideContent
+  .slideContent__item
+  .slider__itemDescr {
+  color: var(--white);
+  font-family: var(--shippori-mincho);
+}
+
+.sliderIcons-comedFromJs {
+  font-size: 55px !important;
+}
+
+.member .memberSlider .memberSlideContent .slideContent__item .sliderItem_img {
+  width: 100%;
+  height: 14rem;
+}
+
+.member
+  .memberSlider
+  .memberSlideContent
+  .slideContent__item
+  .sliderItem_img
+  img {
+  width: auto;
+  height: 100%;
 }

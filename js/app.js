@@ -20,7 +20,7 @@ lists.forEach((item) => {
 });
 // nav action ended
 
-// main started
+// service data for do loop to card
 const serviceData = [
   {
     img: "./images/serviceMan.jpg",
@@ -95,3 +95,47 @@ serviceData.map((item) => {
               </div>
   `;
 });
+
+// slider started
+const memberSlideLeftArrow = document.getElementById("memberSlideLeftArrow");
+const memberSlideRightArrow = document.getElementById("memberSlideRightArrow");
+const slideLists = document.querySelectorAll(".slideContent__item");
+
+let slideNm = 0;
+
+const sliderEvent = (isNext) => {
+  isNext == "prev" ? (slideNm = slideNm + 3) : (slideNm = slideNm - 3);
+  switch (isNext) {
+
+    case "prev":
+      if (slideNm < 0) {
+        for (const elem of slideLists) {
+          elem.style.transform = `translateX(${slideNm}rem)`;
+        }
+      } else {
+        for (const elem of slideLists) {
+          elem.style.transform = `translateX(-${slideNm}rem)`;
+        }
+      }
+      console.log(`translateX(-${slideNm}rem)`);
+      break;
+      
+    case "next":
+      if (slideNm < 0) {
+        for (const elem of slideLists) {
+          elem.style.transform = `translateX(${slideNm}rem)`;
+        }
+      } else {
+        for (const elem of slideLists) {
+          elem.style.transform = `translateX(-${slideNm}rem)`;
+        }
+      }
+      console.log(`translateX(-${slideNm}rem)`);
+      break;
+    default:
+      break;
+  }
+};
+
+memberSlideLeftArrow.addEventListener("click", () => sliderEvent("prev"));
+memberSlideRightArrow.addEventListener("click", () => sliderEvent("next"));
