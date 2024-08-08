@@ -89,6 +89,9 @@ html {
 .active {
   background-color: #c6b519 !important;
 }
+.white {
+  color: white !important;
+}
 
 .button {
   display: block;
@@ -743,7 +746,7 @@ ctf_right_content .ctf_right_title {
   overflow: hidden;
   width: 212px;
   height: 100%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .member
@@ -772,4 +775,52 @@ ctf_right_content .ctf_right_title {
   img {
   width: auto;
   height: 100%;
+}
+
+/* news styles */
+.news {
+  padding: 2rem 0;
+  font-family: var(--shippori-mincho);
+}
+.news .memberTitle,
+.memberEnTitle {
+  font-family: var(--shippori-mincho);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5rem;
+  color: var(--black);
+  text-align: center;
+}
+
+.news .memberEnTitle {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.news .newsContent .news__item  {
+  border-bottom: .1rem solid var(--black);
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+
+
+.news .newsContent .news__item .newsDateBox {
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.news .newsContent .news__item .newsDateBox .dataDescr {
+  padding: 0.3rem 0.5rem;
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.news .newsContent .news__item .newsDateBox .data {
+  font-weight: 600;
+}
+
+.news .newsContent .news__item .newsDesc {
+  font-weight: 700;
 }

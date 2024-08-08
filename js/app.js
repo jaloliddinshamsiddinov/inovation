@@ -117,9 +117,8 @@ const sliderEvent = (isNext) => {
           elem.style.transform = `translateX(-${slideNm}rem)`;
         }
       }
-      console.log(`translateX(-${slideNm}rem)`);
       break;
-      
+
     case "next":
       if (slideNm < 0) {
         for (const elem of slideLists) {
@@ -130,7 +129,6 @@ const sliderEvent = (isNext) => {
           elem.style.transform = `translateX(-${slideNm}rem)`;
         }
       }
-      console.log(`translateX(-${slideNm}rem)`);
       break;
     default:
       break;
