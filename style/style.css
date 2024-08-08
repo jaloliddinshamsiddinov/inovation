@@ -709,10 +709,15 @@ ctf_right_content .ctf_right_title {
   border: none;
   background-color: transparent;
   z-index: 9;
+  padding: 2rem;
 }
 
-.member .memberSlider .memberSlideArrow:active i {
-  font-size: 18px;
+.member .memberSlider .memberSlideArrow:active img {
+  transform: scale(0.8);
+}
+
+.member .memberSlider .memberSlideArrow:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .member .memberSlider {

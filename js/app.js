@@ -106,7 +106,6 @@ let slideNm = 0;
 const sliderEvent = (isNext) => {
   isNext == "prev" ? (slideNm = slideNm + 3) : (slideNm = slideNm - 3);
   switch (isNext) {
-
     case "prev":
       if (slideNm < 0) {
         for (const elem of slideLists) {
